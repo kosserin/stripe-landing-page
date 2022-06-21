@@ -1,0 +1,27 @@
+.mobile-nav {
+    background-color: #fefefe;
+    border-radius: 10px;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.mobile-nav > button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #939393;
+}
+
+@media(max-width: 1000px) {
+    .mobile-nav {
+        display: block;
+    }
+}
