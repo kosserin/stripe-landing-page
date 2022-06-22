@@ -21,25 +21,32 @@ a {
     text-decoration: none;
 }
 
+h3 {
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: .875rem;
+    text-transform: uppercase;
+}
+
 .header > a {
-    color: #fefefe;
+    color: var(--white);
     font-weight: 600;
     font-size: 1.5rem;
     transition: 250ms ease-out;
 }
 
 .header > a:hover {
-    color: #dfdfdf;
+    color: var(--light-gray);
 }
 
-.header .sign-in__btn, .header .burger-menu__btn {
+.sign-in__btn, .burger-menu__btn {
     background-color: rgba(255, 255, 255, .25);
     border: none;
     font-size: 1rem;
     outline: none;
     font-weight: 500;
     border-radius: 30px;
-    color: #fefefe;
+    color: var(--white);
     padding: .5rem 1.25rem;
     display: flex;
     align-items: center;
@@ -48,29 +55,29 @@ a {
     transition: 250ms ease-out;
 }
 
-.header .burger-menu__btn {
+.burger-menu__btn {
     display: none;
 }
 
-.header .sign-in__btn:hover, .header .burger-menu__btn:hover {
+.sign-in__btn:hover, .burger-menu__btn:hover {
     background-color: rgba(255, 255, 255, .45);
 }
 
-.header .sign-in__btn svg {
+.sign-in__btn svg {
     transition: 250ms ease-out;
     font-size: 10px;
 }
 
-.header .sign-in__btn:hover svg {
+.sign-in__btn:hover svg {
     transform: translateX(4px);
 }
 
 @media(max-width: 1000px) {
-    .header .sign-in__btn {
+    .sign-in__btn {
         display: none;
     }
 
-    .header .burger-menu__btn {
+    .burger-menu__btn {
         display: flex;
     }
 }

@@ -14,19 +14,20 @@
     background: rgba(0, 0, 0, .25);
     width: fit-content;
     padding: .4rem 1rem;
-    color: #fefefe;
+    color: var(--white);
     font-size: .8rem;
     font-weight: 500;
     border-radius: 40px;
 }
 
 .content-first ul {
-    color: #939393;
+    list-style: circle;
+    color: var(--dark-gray);
 }
 
 .content-first ul li a {
     text-decoration: none;
-    color: #fefefe;
+    color: var(--white);
     display: flex;
     align-items: center;
     gap: 4px;
@@ -34,7 +35,7 @@
 }
 
 .content-first ul li a:hover {
-    color: #d0d0d0;
+    color: var(--light-gray);
 }
 
 .content-first ul li a svg {
@@ -48,12 +49,12 @@
 
 .content-text h1 {
     font-size: clamp(30px, 8vw, 90px);
-    color: #161616;
+    color: var(--black);
     line-height: 105%;
 }
 
 .content-text p {
-    color: #585858;
+    color: var(--dark-gray);
     max-width: 500px;
     width: 100%;
     line-height: 24px;
@@ -74,7 +75,7 @@
     border-radius: 30px;
     gap: 4px;
     padding: .4rem 1rem;
-    font-size: .85rem;
+    font-size: 1rem;
     font-weight: 500;
     border: 2px solid transparent;
     transition: 250ms ease-out;
@@ -90,23 +91,21 @@
 }
 
 .primary-btn {
-    background: #161616;
-    color: #fefefe;
+    background: var(--blue);
+    color: var(--white);
 }
 
 .primary-btn:hover {
-    background-color: transparent;
-    border-color: #161616;
-    color: #161616;
+    background-color: var(--hovering-effect);
 }
 
 .secondary-btn {
     background-color: transparent;
-    color: #161616;
+    color: var(--blue);
 }
 
 .secondary-btn:hover {
-    border-color: #161616;
+    color: var(--hovering-effect);
 }
 
 @media(max-width: 768px) {

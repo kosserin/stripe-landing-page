@@ -14,7 +14,7 @@
 }
 
 .desktop-nav ul.nav-links > li > a {
-    color: #fefefe;
+    color: var(--white);
     font-weight: 600;
     font-size: .95rem;
     transition: 250ms ease-out;
@@ -26,7 +26,7 @@
 }
 
 .desktop-nav ul.nav-links > li > a:hover {
-    color: #dfdfdf;
+    color: var(--light-gray);
 }
 
 .desktop-nav ul.nav-links > li > a:hover .products-list {
@@ -55,7 +55,7 @@
 
 .products-list, .solutions-list, .developers-list, .company-list {
     display: flex;
-    background: #fefefe;
+    background: var(--white);
     border-radius: 10px;
     position: absolute;
     bottom: 0.5rem;
@@ -73,13 +73,6 @@
 .developers-list {
     flex-direction: column;
     gap: 2rem;
-}
-
-.products-list h3, .solutions-list h3, .developers-list h3 {
-    color: #939393;
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
 }
 
 .products-list ul {
@@ -109,7 +102,7 @@
 }
 
 .products-list ul li a h4, .developers-list > a h4 {
-    color: #000;
+    color: var(--blue);
     font-weight: 500;
     font-size: 1rem;
     display: flex;
@@ -134,14 +127,14 @@
 }
 
 .products-list ul li a h5, .developers-list > a h5 {
-    color: #939393;
+    color: var(--dark-gray);
     font-weight: 500;
     font-size: .82rem;
     transition: 250ms ease-out;
 }
 
 .products-list ul li a:hover h5, .developers-list > a:hover h5 {
-    color: #000;
+    color: var(--blue);
 }
 
 .solutions-list {
@@ -169,9 +162,14 @@
 .developers-list .developers-columns .developers-column ul li a {
     width: 200px;
     display: flex;
-    color: #2c2c2c;
+    color: var(--dark-gray);
     font-weight: 400;
     font-size: .875rem;
+    transition: 250ms ease-out;
+}
+
+.developers-list .developers-columns .developers-column ul li a:hover {
+    color: var(--black);
 }
 
 .solutions-list ul, .developers-list ul:last-of-type, .company-list ul {
@@ -190,28 +188,28 @@
 }
 
 .solutions-list ul li a h4, .developers-list ul:last-of-type li a h4, .company-list ul li a h4 {
-    color: #0e062b;
+    color: var(--blue);
     font-weight: 500;
     font-size: .875rem;
 }
 
 .solutions-list ul li a svg, .developers-list > a svg, .developers-list ul:last-of-type li a svg, .company-list ul li a svg {
     font-size: 1rem;
-    color: hsl(253, 76%, 60%);
+    color: var(--sky);
     transition: 250ms ease-out;
 }
 
 .solutions-list ul li a:hover svg, .developers-list > a:hover svg, .developers-list ul:last-of-type li a:hover svg, .company-list ul li a:hover svg {
-    color: #0e062b;
+    color: var(--blue);
 }
 
 .triangle {
     position: absolute;
-    top: 0;
+    top: .2rem;
     transform: translateY(-13px);
     width: 0; 
     height: 0; 
-    border-bottom: 13px solid #fefefe; 
+    border-bottom: 13px solid var(--white); 
     border-left: 10px solid transparent; 
     border-right: 10px solid transparent;
 }

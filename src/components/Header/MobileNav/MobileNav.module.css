@@ -1,14 +1,15 @@
 .mobile-nav {
-    background-color: #fefefe;
+    background-color: var(--white);
     border-radius: 10px;
     position: absolute;
     top: 1rem;
     left: 0;
     right: 0;
     display: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .2);
 }
 
-.mobile-nav > button {
+.close-btn {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -17,7 +18,96 @@
     background-color: transparent;
     border: none;
     outline: none;
-    color: #939393;
+    color: var(--dark-gray);
+}
+
+.mobile-lists {
+    margin: 2rem;
+}
+
+.mobile-columns {
+    border-bottom: 2px dashed var(--dark-gray);
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.mobile-nav .mobile-lists .mobile-columns:last-of-type {
+    border-bottom: none;
+}
+
+.mobile-columns ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.mobile-columns ul li a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.mobile-columns ul li a h4 {
+    color: var(--blue);
+    font-weight: 500;
+    font-size: .875rem;
+    letter-spacing: 1px;
+}
+
+.mobile-columns ul li a svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: var(--sky);
+    transition: 250ms ease-out;
+}
+
+.mobile-columns ul li a:hover svg {
+    color: var(--blue);
+}
+
+/* MOBILE BUTTON PART */
+
+.mobile-button {
+    padding: 2rem;
+    background-color: var(--sky);
+    border-radius: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    margin: .5rem auto;
+}
+
+.sign-in__btn {
+    background-color: var(--blue);
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    font-weight: 500;
+    border-radius: 30px;
+    color: var(--white);
+    padding: .5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: 250ms ease-out;
+}
+
+.sign-in__btn:hover {
+    background-color: var(--hovering-effect);
+}
+
+.sign-in__btn svg {
+    transition: 250ms ease-out;
+    font-size: 10px;
+}
+
+.sign-in__btn:hover svg {
+    transform: translateX(4px);
 }
 
 @media(max-width: 1000px) {

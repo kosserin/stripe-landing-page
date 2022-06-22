@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: radial-gradient(circle, #ff3333, #ff5c2d, #ff7a2b, #ff9531, #ffad3e, #ffa749, #ffa153, #ff9c5d, #ff7a71, #ff5c95, #ed51c2, #a960ee);
     clip-path: polygon(0 0, 100% 0, 100% 220px, 0 480px);
 }
 
